@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* form {
+            background-color:aqua;
+        } */
+    </style>
+</head>
+<body>
+    <!-- action mtlb kaha navigate karna hai form submit hone ke baad, method mtlb kaunsa method use karna hai form submit karne ke liye, post ya get -->
+    <form action="actionPage.html" method="get">
+        <h1>Sports Physical Form</h1>
+        <fieldset>
+            <legend>
+                <h4>Athlete Information</h4>
+            </legend>
+<!-- name and for should be same and unique with multiple -->
+ <table>
+        <ul>
+            <li><strong><label for="name">Name:</label></strong> <input type="text" id="name" placeholder="Enter your name"></li>
+            <li><strong><label for="School/Team">School/Team: </label></strong> <input type="text" id="School/Team" placeholder="Enter your school or team"></li>
+            <li><strong><label for="Sports:">Sports:</label></strong> <input type="text" id="Sports" placeholder="Enter your sport" name="Sports" value="Sports"></li>
+            <li><strong><label for="Parents/Guardian Name:">Parents/Guardian Name:</label></strong> <input type="text" id="Parents/Guardian Name" placeholder="Enter your parent's or guardian's name" name="Parents/Guardian Name" value="Parents/Guardian Name"></li>
+            <li><strong><label for="Contact Number:">Contact Number:</label></strong> <input type="text" id="Contact Number" placeholder="Enter your contact number" name="Contact Number" value="Contact Number"></li>
+        </ul>
+    </table>tabl
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h4>Medical History for Athlete</h4>
+            </legend>
+            <ul>
+            <li>
+                    <label for="History_Concussion">History of Concussion:</label>
+                    <input type="radio" id="History_Concussion_Yes" name="concussion" value="yes">
+                    <label for="History_Concussion_Yes">Yes</label>
+                    <input type="radio" id="History_Concussion_No" name="concussion" value="no">
+                    <label for="History_Concussion_No">No</label>
+                </li>
+                <li>
+                    <label for="History_PreviousSurgeries">Previous Surgeries:</label>
+                    <input type="text" id="History_PreviousSurgeries" name="previous_surgeries">
+                </li>
+                <li>
+                    <label for="History_BoneFractures">Any bone fractures?</label>
+                    <input type="radio" id="History_BoneFractures_Yes" name="bone_fractures" value="yes">
+                    <label for="History_BoneFractures_Yes">Yes</label>
+                    <input type="radio" id="History_BoneFractures_No" name="bone_fractures" value="no">
+                    <label for="History_BoneFractures_No">No</label>
+                </li>
+                <li>
+                    <label for="History_Asthma">Asthma or breathing problems?</label>
+                    <input type="radio" id="History_Asthma_Yes" name="asthma" value="yes">
+                    <label for="History_Asthma_Yes">Yes</label>
+                    <input type="radio" id="History_Asthma_No" name="asthma" value="no">
+                    <label for="History_Asthma_No">No</label>
+                </li>          
+        </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Select your Department</legend>
+<select name="department" id="department">
+    <option value="Null">AIML</option>
+    <option value="Null">ML</option>
+    <option value="Null">CSE</option>
+    <option value="Null">IT</option>
+    </select>
+    </fieldset>
+
+    <fieldset>
+            <legend>Select your Hobbies</legend>
+<label for="hobbies">Hobbies:</label>
+<input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+<label for="hobby1">Reading</label>
+<input type="checkbox" id="hobby2" name="hobbies" value="Sports">
+<label for="hobby2">Sports</label>
+    </fieldset>
+
+    <fieldset>
+    <legend>What is your favorite hobby?</legend>
+    <textarea name="favorite_hobby" id="favorite_hobby" rows="4" cols="50" placeholder="Enter your favorite hobby here..."></textarea>
+    </fieldset>
+
+    <fieldset>
+    <legend>What is your Email id?</legend>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    </fieldset>
+
+    <fieldset>
+    <legend>Enter your password</legend>
+    <input type="password" id="password" name="password" required>
+    </fieldset>
+
+    <fieldset>
+    <legend>Enter your Number</legend>
+    <input type="text" id="number" name="number" placeholder="Enter your phone number" required>
+    </fieldset>
+
+    <fieldset>
+    <legend>Enter your Date</legend>
+    <input type="date" id="date" name="date" required>
+    </fieldset>
+
+<fieldset>
+    <legend>Enter your Time</legend>
+    <input type="time" id="time" name="time" required>
+    </fieldset>
+
+<fieldset>
+    <legend>Enter your Date and Time</legend>
+    <input type="datetime-local" id="datetime" name="datetime" required>
+    </fieldset>
+
+<fieldset>
+    <legend>Enter your File</legend>
+    <input type="file" id="file" name="file" required accept=".jpg, .jpeg, .png, .pdf">
+    </fieldset>
+
+<fieldset>
+    <legend>Enter your Profile Image</legend>
+    <input type="file" id="file" name="file" required accept=".jpg, .jpeg, .png">
+    </fieldset>
+
+    <fieldset>
+    <legend>Enter your Resume</legend>
+    <input type="file" id="file" name="file" required accept=".pdf" >
+    </fieldset>
+
+    <fieldset>
+    <legend>Enter your Word File</legend>
+    <input type="file" id="file" name="file" required accept=".doc, .docx">
+    </fieldset>
+
+    <fieldset>
+    <legend>Enter your Excel File</legend>
+    <input type="file" id="file" name="file" required accept=".xlsx, .xls">
+    </fieldset>
+
+    <fieldset>
+        <legend>Qualification</legend>
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Class X</th>
+                <td><label for="classX_board"><input-type="text" id="classX_board" name="classX_board" placeholder="Enter Board Name"></label></td>
+                <td><label for="classX_percentage"><input-type="text" id="classX_percentage" name="classX_percentage" placeholder="Enter Percentage"></label></td>
+                <td><label for="classX_year"><input-type="text" id="classX_year" name="classX_year" placeholder="Enter Year of Passing"></label></td>
+            </tr>
+        </table>
+ </fieldset>
+
+        <fieldset>
+            <legend>
+               <h4>Doctor's Recommendations for Sports Participation</h4>
+            </legend>
+        
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
