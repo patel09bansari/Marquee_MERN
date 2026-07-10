@@ -1,0 +1,21 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding:20px;
+    width:70%;
+    height: 50%;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    justify-content: space-evenly;
+}
+
+.content {
+     display: flex;
+    flex-direction: row;
+}
