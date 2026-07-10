@@ -1,0 +1,83 @@
+body{
+    background:#eeeeee;
+    font-family:Arial;
+    text-align:center;
+}
+
+.card{
+    width:290px;
+    background:white;
+    margin:auto;
+    margin-top:40px;
+    border-radius:15px;
+    padding-bottom:20px;
+}
+
+.header{
+    height:130px;
+    background:royalblue;
+    border-radius:15px 15px 0 0;
+}
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-top:-80px;
+}
+
+h2{
+    margin:10px 0;
+}
+
+p{
+    color:gray;
+}
+
+.icons{
+    margin:15px;
+}
+
+.icons a{
+    text-decoration:none;
+    font-size:22px;
+    margin:10px;
+}
+
+.fa-facebook{
+    color:#1877F2;
+}
+
+.fa-twitter{
+    color:#1DA1F2;
+}
+
+.fa-instagram{
+    color:#E1306C;
+}
+
+.fa-youtube{
+    color:red;
+}
+
+button{
+    background:royalblue;
+    color:white;
+    border: none;
+    border-radius:20px;
+    padding:10px 20px;
+    margin:10px 5px;
+}
+
+.footer{
+    margin-top:15px;
+    color:gray;
+}
+
+.footer span{
+    margin:8px;
+}
+
+.footer i{
+    margin-right:3px;
+}
