@@ -7,6 +7,17 @@
     height: 50%;
 }
 
+#secondBox {
+  display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    border: 2px solid black;
+    padding:20px;
+    width:70%;
+    height: 50%;
+}
+
 body {
     align-items: center;
     justify-content: center;

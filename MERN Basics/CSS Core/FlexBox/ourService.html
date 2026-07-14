@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    
+    <style>
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+
+        #heading {
+            text-align: center;
+            color: #1e3a8a; /* Deep blue main heading */
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            width: 1000px;
+            height: 500px;
+        }
+        
+        #divBox1, #divBox2, #divBox3, #divBox4 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .row1, .row2, .row3, #row4 {
+            display: flex;
+            align-items: flex-start;
+            width: 34%; 
+            padding: 5px;
+        }
+
+        .row1 i, .row2 i, .row3 i, #row4 i {
+            font-size: 2rem;
+            width: 55px;
+            height: 55px;
+            background-color: #ffffff;
+            border: 1px solid white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            margin-top: 35px;
+            flex-shrink: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="heading">Our Services</h1>
+
+        <div id="divBox1">
+            <div class="row1">
+                <i class="fa-regular fa-clipboard" style="color: red;"></i>
+                <div>
+                    <h2 style="color: red;">Manual Testing</h2>
+                    <p>Comprehensive manual testing to onsure your software functions as intended.</p>
+                </div>
+            </div>
+            <div class="row1">
+                <i class="fa-solid fa-gear"></i>
+                <div>
+                   <h2>Automated Testing</h2>
+                    <p>Efficient and reliable automated testing solutions to save time and resources.</p>
+                </div>
+            </div>
+            <div class="row1">
+                <i class="fa-solid fa-shapes"></i>
+                <div>
+                    <h2>API Testing</h2>
+                    <p>We help you deliver seamless and high-quality digital experiences by thoroughly evaluating your APIs.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="divBox2">
+            <div class="row2">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div>
+                    <h2>Mobile Testing</h2>
+                    <p>QASERT's mobile testing ensures seamless, reliable user experiences across devices.</p>
+                </div>
+            </div>
+            <div class="row2">
+                <i class="fa-solid fa-building-shield"></i>
+                <div>
+                  <h2>Security Testing</h2>
+                    <p>Identifying vulnerabilities to protect your software from potential threats.</p>
+                </div>
+            </div>
+            <div class="row2">
+                <i class="fa-brands fa-delicious"></i>
+                <div>
+                    <h2>Usability Testing</h2>
+                    <p>Ensuring your software meets user requirements and expectations.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="divBox3">
+            <div class="row3">
+                <i class="fa-solid fa-business-time"></i>
+                <div>
+                    <h2>Performance Testing</h2>
+                    <p>Evaluating software performance under different conditions to ensure stability and scalability.</p>
+                 </div>
+            </div>
+            <div class="row3">
+                <i class="fa-solid fa-person"></i>
+                <div>
+                    <h2>Accessibility Testing</h2>
+                    <p>Making sure your software is accessible to all users, including those with disabilities. Case Studies/Success Stories</p>
+                </div>
+            </div>
+            <div class="row3">
+                <i class="fa-solid fa-eye"></i>
+                <div>
+                    <h2>Visual Testing</h2>
+                    <p>Verifying the visual correctness of your software across different interfaces.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="divBox4">
+            <div id="row4">
+                <i class="fa-solid fa-desktop"></i>
+                <div>
+                    <h2>Compatibility Testing</h2>
+                    <p id="para">Ensuring your software works seamlessly across various devices and platforms.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
