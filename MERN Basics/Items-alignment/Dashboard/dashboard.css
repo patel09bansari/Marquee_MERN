@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefdfc;
+  padding: 20px;
+}
+
+#dashboard-container {
+    display: grid;
+    grid-template-columns: 200px 600px;
+    column-gap: 20px;
+grid-template-rows: 700px;
+    background-color: rgb(139, 133, 133);
+}
