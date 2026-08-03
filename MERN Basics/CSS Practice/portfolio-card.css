@@ -8,22 +8,56 @@ body{
     width:290px;
     background:white;
     margin:auto;
-    margin-top:40px;
+    margin-top:70px;
     border-radius:15px;
     padding-bottom:20px;
+    transition: all 1s ease-in-out;
 }
 
+.card:hover{
+    transform: perspective(300px) translateZ(50px);
+}
 .header{
     height:130px;
     background:royalblue;
     border-radius:15px 15px 0 0;
 }
 
+/* Container to position the tick over the image */
+.profile-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -80px auto 0 auto;
+    /* Animated floating effect for image + badge together */
+    animation: float 3s ease-in-out infinite;
+}
+
 .profile{
-    width:150px;
-    height:150px;
+    width: 100%;
+    height: 100%;
     border-radius:50%;
-    margin-top:-80px;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+/* Green Tick Badge */
+.badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: #2ecc71;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    /* Pulsing effect */
+    animation: pulse 2s infinite;
 }
 
 h2{
@@ -42,6 +76,13 @@ p{
     text-decoration:none;
     font-size:22px;
     margin:10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
 }
 
 .fa-facebook{
@@ -67,6 +108,14 @@ button{
     border-radius:20px;
     padding:10px 20px;
     margin:10px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(7, 61, 222, 0.4);
 }
 
 .footer{
@@ -80,4 +129,26 @@ button{
 
 .footer i{
     margin-right:3px;
+}
+
+/* Keyframe Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(46, 204, 113, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+    }
 }

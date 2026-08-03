@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Page background */
+        body {
+            background: url('https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/12/cropped-Selfie.jpg?size=*:900') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* The Spinner */
+        #spinner {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            
+            /* Dotted colored borders */
+            border-top: 30px dotted red;
+            border-left: 30px dotted green;
+            border-right: 30px dotted blue;
+            border-bottom: 30px dotted yellow;
+
+            /* Continuous spin animation */
+            animation: spin 2s ease-out infinite;
+
+            /* Dimmed background image (0.3 opacity effect) */
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+            url('https://i.pinimg.com/736x/24/b2/4d/24b24d3fe43c8d1c8fe48f0e512fb715.jpg') center/contain no-repeat;
+        }
+
+        /* Spin rotation */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="spinner"></div>
+
+</body>
+</html>
