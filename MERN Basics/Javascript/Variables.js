@@ -257,56 +257,66 @@
 
 
 
-//*******now using callback for same example*******
-function BankAccount(name, accNumber,balance=0){
-this.accountHolderName = name;
-this.accountNumber=accNumber;
-this.balance=balance;
+// //*******now using callback for same example*******
+// function BankAccount(name, accNumber,balance=0){
+// this.accountHolderName = name;
+// this.accountNumber=accNumber;
+// this.balance=balance;
 
-this.deposit = (amount, callback) => {
-    this.balance += amount;
-    let result = callback(amount, this.balance);
-    return result;  
-}
+// this.deposit = (amount, callback) => {
+//     this.balance += amount;
+//     let result = callback(amount, this.balance);
+//     return result;  
+// }
 
-this.withdraw = (amountToWithdraw, callback) => {
-    if(this.balance > amountToWithdraw){
-        this.balance -= amountToWithdraw;
-        let result = callback(amountToWithdraw, this.balance);
-        return result;
-    }
-}
+// this.withdraw = (amountToWithdraw, callback) => {
+//     if(this.balance > amountToWithdraw){
+//         this.balance -= amountToWithdraw;
+//         let result = callback(amountToWithdraw, this.balance);
+//         return result;
+//     }
+// }
 
-this.interest = (percent, callback) => {
-    let interestAmount = (this.balance * percent) / 100;
-    this.balance += interestAmount;
-    let result = callback(interestAmount, this.balance);
-    return result;
-}
+// this.interest = (percent, callback) => {
+//     let interestAmount = (this.balance * percent) / 100;
+//     this.balance += interestAmount;
+//     let result = callback(interestAmount, this.balance);
+//     return result;
+// }
 
-}
+// }
 
-//callback function to display the result of deposit and withdraw
-function displayDeposit(amount, balance){
-    return `Amount deposited : ${amount} | New Balance ${balance}`;
-}
+// //callback function to display the result of deposit and withdraw
+// function displayDeposit(amount, balance){
+//     return `Amount deposited : ${amount} | New Balance ${balance}`;
+// }
 
-function displayWithdraw(amount, balance ){
-    return `Amount withdrawn : ${amount} | Now Balance: ${balance}`;
-}
+// function displayWithdraw(amount, balance ){
+//     return `Amount withdrawn : ${amount} | Now Balance: ${balance}`;
+// }
 
-function displayInterest(amount, balance){
-    return `Interest added: ${amount} | New Balance: ${balance}`;
-}
+// function displayInterest(amount, balance){
+//     return `Interest added: ${amount} | New Balance: ${balance}`;
+// }
 
 
-const Mohit = new BankAccount("Mohit","12050010005", 10000)
-const Vinay = new BankAccount("Vinay","12050020001",12000)
+// const Mohit = new BankAccount("Mohit","12050010005", 10000)
+// const Vinay = new BankAccount("Vinay","12050020001",12000)
 
-console.log(Mohit.deposit(10000, displayDeposit));
-console.log(Mohit.withdraw(190, displayWithdraw));
-console.log(Mohit.interest(5, displayInterest));
 
-console.log(Vinay.deposit(500, displayDeposit));
-console.log(Vinay.withdraw(100, displayWithdraw));
-console.log(Vinay.interest(3, displayInterest));
+// console.log(Mohit.deposit(10000, displayDeposit));
+// console.log(Mohit.withdraw(190, displayWithdraw));
+// console.log(Mohit.interest(5, displayInterest));
+
+// console.log(Vinay.deposit(500, displayDeposit));
+// console.log(Vinay.withdraw(100, displayWithdraw));
+// console.log(Vinay.interest(3, displayInterest));
+
+
+// console.log(typeof Mohit);
+// console.log(typeof Mohit.withdraw(190, ()=>{}));
+// console.log(typeof Mohit.withdraw(190, displayWithdraw));
+
+
+
+//
